@@ -1,0 +1,26 @@
+body{
+  background-color: lightblue;
+}
+h1{
+  border: 1px solid black;
+}
+h2{
+  color:purple;
+}
+input{
+  border: 2px solid darkred;
+}
+li a[href="https://www.google.com/"]{
+  color: red;
+}
+p{
+  background: #fffca5;
+}
+#itemone{
+  text-decoration: overline purple;
+}
+#textblock{
+  border:5px solid gray;
+  width: 800px;
+  height: 400px;
+}

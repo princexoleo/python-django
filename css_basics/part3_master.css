@@ -1,0 +1,23 @@
+.firstDiv{
+  color: blue;
+}
+.secondDiv{
+  color: red;
+}
+#singledout{
+  color: green;
+  text-decoration: underline;
+}
+/* *{
+  color: black;
+} */
+h3+ul{
+  border:4px dotted purple;
+}
+li a{
+  color: red;
+}
+li a[href="www.facebook.com"]{
+  color: blue;
+  border: 4px solid orange;
+}

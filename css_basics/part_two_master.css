@@ -1,0 +1,20 @@
+body{
+  background: url(https://www.nassauparadiseisland.com/sites/default/files/images/pages/hero/see-do-water-activities-beaches-hero.jpg);
+  background-repeat: space;
+}
+
+div{
+  background-color: rgb(216, 210, 210);
+  border-color: blue;
+  border-width: 5px;
+  border-style: solid;
+}
+
+p{
+  color: darkblue;
+}
+
+span{
+  background: red;
+  color: white;
+}

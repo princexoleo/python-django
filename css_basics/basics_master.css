@@ -1,0 +1,19 @@
+/* comments */
+/* some text  trics crtl front slash*/
+/* basic structure of css
+selected tags{
+  property:value;
+} */
+
+h1{
+  color: red;
+}
+li{
+  color: rgb(104, 99, 99);
+}
+p{
+  color: #4f48db;
+}
+h4{
+  color: rgb(104, 99, 99,0.5); /*0.5 means half transpernt*/
+}
