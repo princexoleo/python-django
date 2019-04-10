@@ -4,9 +4,9 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE','first_project.settings')
 import django
 django.setup()
 
-##Fake pop script
+##Fake information generating script
 import random
-from first_app.models import AccessRecord,Webpage,Topic
+from first_app.models import AccessRecord,Webpage,Topic,Users
 from faker import Faker
 
 fakegen = Faker()
@@ -34,8 +34,17 @@ def populate(N=5):
         #create the new AccessRecord entry
         acc_rec = AccessRecord.objects.get_or_create(name=webpg, date=fake_date)[0]
 
+def populate_name(N=5):
+    for entry in range(N):
+        fake_name = fakegen.name().split()
+        fake_first_name = fake_name[0]
+        fake_last_name = fake_name[1]
+        fake_email =fakegen.email()
+        user = Users.objects.get_or_create(first_name=fake_first_name,last_name=fake_last_name,email=fake_email)[0]
+
 
 if __name__=='__main__':
-    print("populating script!")
-    populate(20)
+    print("populating database!")
+    populate_name(20)
+    #populate(20)
     print("populating complete")

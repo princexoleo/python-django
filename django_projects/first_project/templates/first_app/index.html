@@ -7,9 +7,28 @@
         <link rel="stylesheet" href="{% static "css/mystyle.css" %}" />
     </head>
     <body>
-        <h1>Hi this is a picture of Django</h1>
+        <h1>Hi Django Model and Injection Lecture</h1>
+        <h2>Here are your access records</h2>
 
-        <img src="{% static "images/djangoimg.png" %}" alt="uh oh! didn't show">
+        <div class="djangotwo">
+            {% if access_records %}
+              <table>
+                  <thead>
+                      <th>Site Name</th>
+                      <th>Date Accessed</th>
+                  </thead>
+
+                  {% for acc in access_records %}
+                    <tr>
+                        <td>{{ acc.name }}</td>
+                        <td>{{ acc.date }}</td>
+                    </tr>
+                    {% endfor %}
+              </table>
+              {% else %}
+                <p>NO ACCESS RECORDS FOUND</p>
+              {% endif %}
+        </div>
 
 
     </body>
