@@ -1,12 +1,15 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>First App</title>
+        <title>Django Index</title>
     </head>
     <body>
-        <h1>Hello this is index.html</h1>
+        <h1>Hi this is a picture of Django</h1>
 
-        {{ insert_me }}
+        <img src="{% static "images/djangoimg.png" %}" alt="uh oh! didn't show">
+
+
     </body>
 </html>
